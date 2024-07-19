@@ -1,2 +1,37 @@
-node_modules/
+**/node_modules
 .env
+
+# dependencies
+ethers-by-example/node_modules
+ethers-by-example/.pnp
+ethers-by-example/.pnp.js
+ethers-by-example/.yarn/install-state.gz
+
+# testing
+ethers-by-example/coverage
+
+# next.js
+ethers-by-example/.next/
+ethers-by-example/out/
+
+# production
+ethers-by-example/build
+
+# misc
+ethers-by-example/.DS_Store
+ethers-by-example/*.pem
+
+# debug
+ethers-by-example/npm-debug.log*
+ethers-by-example/yarn-debug.log*
+ethers-by-example/yarn-error.log*
+
+# local env files
+ethers-by-example/.env*.local
+
+# vercel
+ethers-by-example/.vercel
+
+# typescript
+ethers-by-example/*.tsbuildinfo
+ethers-by-example/next-env.d.ts
