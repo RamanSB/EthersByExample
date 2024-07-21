@@ -60,3 +60,9 @@ ethers.keccak256(hexRepr); // 0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0
 ethers.solidityPackedKeccak256(["string"], [exampleString]); // 0x592fa743889fc7f92ac2a37bb1f5ba1daf2a5c84741ca0e0061d243a2e6707ba
 ethers.hashMessage(exampleString); // 0xa1de988600a42c4b4ab089b619297c17d53cffae5d5120d82d8a92d0bb3b78f2 <- Can you guess why this is different?
 
+
+let exampleStr: string = "Hello World";
+const byteString: Uint8Array = ethers.toUtf8Bytes(exampleStr);
+const digest: string = ethers.hashMessage(byteString);
+console.log("Digest: ", digest);
+
